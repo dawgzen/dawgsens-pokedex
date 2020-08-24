@@ -69,7 +69,7 @@ const Pokemon = (props) => {
                             <div className="info">
                                 <Typography className={classes.pokeTxt}>
                                     {"Species: "}
-                                    {species.name}
+                                    {toFirstCharUppercase(species.name)}
                                 </Typography>
                                 <Typography className={classes.pokeTxt}>
                                     {`Height: ${actualHeight} cm`}
