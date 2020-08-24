@@ -45,6 +45,7 @@ export const useStyles = makeStyles(theme => ({
         width: "35%",
         marginTop: "5px",
         marginBottom: "1%",
+        marginLeft:'15%',
         color: "#f4cf50",
     },
     searchInput: {
@@ -55,7 +56,8 @@ export const useStyles = makeStyles(theme => ({
     toolbarContainer: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: "space-between",
+        justifyContent: "flex-start",
+
     },
     pokedexName: {
         color: "#6e5773",
@@ -96,5 +98,7 @@ export const useStyles = makeStyles(theme => ({
         textDecoration: 'none',
         color: "#f4cf50",
         fontSize: 13,
+        marginLeft:'1%',
+        marginRight:'1%'
     }
 }));
