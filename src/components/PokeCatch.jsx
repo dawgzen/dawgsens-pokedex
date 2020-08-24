@@ -64,7 +64,7 @@ function PokeCatch({history}) {
                 <img
                     src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + wildPokemon.id + ".png"}
                     className="sprite"/>
-                <button className="catch-btn" onClick={() => catchPokemon(wildPokemon)}>CATCH</button>
+                <button className="catch-btn" onClick={() => catchPokemon(wildPokemon)}><img src={require("../assets/poke.png")} alt="icon" width={75} height={75}/></button>
             </section>
             <section className="pokedex">
                 <Typography className={classes.pokeCatch}>Click on a sprite to look up the caught pokémon in the pokédex</Typography>

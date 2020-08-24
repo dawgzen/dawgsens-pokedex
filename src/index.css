@@ -77,16 +77,10 @@ body {
 }
 
 .wild-pokemon .catch-btn {
-    width: 200px;
-    height: 35px;
     display: block;
     margin: 25px auto;
-    background: #f4cf50;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    font-weight: 700;
-    cursor: pointer;
+    background: rgba(188, 185, 195, 0.56);
+
 }
 
 .wild-pokemon .catch-btn:active {
