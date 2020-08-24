@@ -86,7 +86,8 @@ export const useStyles = makeStyles(theme => ({
     pokeCatch: {
         color: "#f41919",
         fontWeight: 200,
-        textAlign: 'center'
+        textAlign: 'center',
+        marginBottom: '2%'
     },
     grid: {
         margin: '0 auto',

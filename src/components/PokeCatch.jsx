@@ -3,6 +3,7 @@ import axios from 'axios'
 import '../index.css'
 import {AppBar, Toolbar, Typography} from "@material-ui/core";
 import {useStyles} from "../styles/PokedexTheme";
+import {toFirstCharUppercase} from "../utils";
 
 function PokeCatch({history}) {
     const [pokedex, setPokedex] = useState([]);
@@ -73,7 +74,7 @@ function PokeCatch({history}) {
                             <img onClick={() => history.push(`/${pokemon.id}`)}
                                  src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pokemon.id + ".png"}
                                  className="sprite"/>
-                            <h3 className={classes.pokeName}>{pokemon.name}</h3>
+                            <h3 className={classes.pokeName}>{toFirstCharUppercase(pokemon.name)}</h3>
                             <button className="remove" onClick={() => releasePokemon(pokemon.id)}>&times;</button>
                         </div>
                     ))}
